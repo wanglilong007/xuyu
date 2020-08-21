@@ -1,0 +1,20 @@
+<div>
+  <div class="menu-list-holder">
+      <ul class="menu-list">
+        <li class="menu"
+            [class.selected]="'books' === currentMenu"
+            (click)="onSelectBooks()"
+            routerLink="/books"
+        >
+          <span>我的书籍</span>
+        </li>
+        <li class="menu"
+            [class.selected]="'tasks' === currentMenu"
+            (click)="onSelectTasks()"
+            routerLink="/tasks"
+        >
+          <span>读书任务</span>
+        </li>
+      </ul>
+  </div>
+</div>

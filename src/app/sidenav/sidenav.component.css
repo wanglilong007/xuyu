@@ -1,0 +1,15 @@
+.menu-list li{
+  list-style: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 3px;
+}
+.menu-list li:hover{
+  background-color: rgb(191, 195, 199);
+}
+
+.menu-list li.selected{
+  background-color: rgb(191, 195, 199);
+  font-weight: 700;
+}
