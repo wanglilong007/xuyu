@@ -52,10 +52,8 @@ a:hover {
 /* Input */
 
 input {
-  font-size: 14px;
   border-radius: 2px;
   padding: 8px;
-  margin-bottom: 16px;
   border: 1px solid #BDBDBD;
 }
 
@@ -119,22 +117,6 @@ label {
   background-color: #EEEEEE;
 }
 
-.content-container{
-  margin-left: 220px;
-  margin-top: 68px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
-  padding-left: 60px;
-}
-
-.content-header {
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
