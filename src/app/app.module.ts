@@ -11,6 +11,7 @@ import { BooksComponent } from './books/books.component';
 import { TasksComponent } from './tasks/tasks.component';
 
 import { AppRoutingModule }     from './app-routing/app-routing.module';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { AppRoutingModule }     from './app-routing/app-routing.module';
     ProductListComponent,
     SidenavComponent,
     BooksComponent,
-    TasksComponent
+    TasksComponent,
+    BookComponent
   ],
   bootstrap: [ AppComponent ]
 })
