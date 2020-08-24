@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import {MatButtonModule} from '@angular/material/button';
+
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -17,7 +19,8 @@ import { BookComponent } from './book/book.component';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule
   ],
   declarations: [
     AppComponent,
