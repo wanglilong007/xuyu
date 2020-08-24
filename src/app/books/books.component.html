@@ -1,4 +1,8 @@
 <div class="content-container container">
   <div class="content-header container">header</div>
-  <div class="content-main container">books works!</div>
+  <div class="content-main container">
+    <div *ngFor="let book of books">
+      {{book.name}}
+    </div>
+  </div>
 </div>
