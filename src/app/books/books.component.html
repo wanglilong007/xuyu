@@ -2,7 +2,7 @@
   <div class="content-header container">header</div>
   <div class="content-main container">
     <div *ngFor="let book of books">
-      {{book.name}}
+      <app-book [book]=book></app-book>
     </div>
   </div>
 </div>
