@@ -6,7 +6,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import { ProductListComponent } from './product-list/product-list.component';
 import { BooksComponent } from './books/books.component';
 import { TasksComponent } from './tasks/tasks.component';
 
@@ -22,7 +21,6 @@ import { BookComponent } from './book/book.component';
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent,
     SidenavComponent,
     BooksComponent,
     TasksComponent,
