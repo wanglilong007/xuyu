@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule }    from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -12,12 +14,17 @@ import { TasksComponent } from './tasks/tasks.component';
 import { AppRoutingModule }     from './app-routing/app-routing.module';
 import { BookComponent } from './book/book.component';
 import { BookService } from './book.service';
+import { InMemoryBookService } from './in-memory-book.service';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryBookService, { dataEncapsulation: false }
+    )
   ],
   declarations: [
     AppComponent,
@@ -28,7 +35,7 @@ import { BookService } from './book.service';
     BookComponent
   ],
   bootstrap: [ AppComponent ],
-  providers: [BookService]
+  providers: [BookService, InMemoryBookService]
 })
 export class AppModule { }
 
